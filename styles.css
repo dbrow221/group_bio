@@ -1,16 +1,16 @@
 /* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f400;
+    background-color: rgba(169, 169, 169, 0.251);
     margin: 0;
     padding: 0;
-    background-color: rgba(169, 169, 169, 0.251);
 }
 
 /* Header section styling */
 header {
     background: #333;
-    background-image: url(https://wallpapercave.com/wp/7gRF7Oj.jpg);
+    background-image: url("https://wallpapercave.com/wp/7gRF7Oj.jpg");
+    background-size: cover;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -27,10 +27,9 @@ header nav {
     margin-top: 10px;
 }
 
-header h1{
-font-family: 'Times New Roman', Times, serif;
-
-
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 header nav button {
@@ -41,6 +40,7 @@ header nav button {
     border-radius: 5px;
     cursor: pointer;
     margin: 0 5px;
+    transition: background 0.3s ease;
 }
 
 header nav button:hover {
@@ -54,6 +54,7 @@ header nav button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 /* Card styling for individual team bios */
@@ -74,6 +75,7 @@ header nav button:hover {
 
 h2 {
     margin: 0 0 10px;
+    color: #00b306;
 }
 
 /* Initially hide bio details */
@@ -91,8 +93,31 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 button:hover {
     background: #00b306;
+}
+
+/* LinkedIn link styling */
+a {
+    display: block;
+    text-decoration: none;
+}
+
+a.Linkedin {
+    color: #32CD32; /* Slime Green */
+}
+
+a.Linkedin:visited {
+    color: #228B22; /* Darker Green */
+}
+
+/* Icon images inside cards */
+img.icon {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
