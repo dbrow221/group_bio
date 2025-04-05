@@ -4,11 +4,8 @@
  */
 function toggleBio(bioId) {
     const bio = document.getElementById(bioId);
-    // Toggle between showing and hiding the bio section
-    if (bio.style.display === "none" || bio.style.display === "") {
-        bio.style.display = "block";
-    } else {
-        bio.style.display = "none";
+    if (bio) {
+        bio.style.display = (bio.style.display === "none" || bio.style.display === "") ? "block" : "none";
     }
 }
 
@@ -20,14 +17,13 @@ function showSection(sectionId) {
     const biosSection = document.getElementById("bios");
     const visionSection = document.getElementById("vision");
 
-    // Display the bios section and hide the vision section
-    if (sectionId === "bios") {
-        biosSection.style.display = "flex";
-        visionSection.style.display = "none";
-    }
-    // Display the vision section and hide the bios section
-    else if (sectionId === "vision") {
-        biosSection.style.display = "none";
-        visionSection.style.display = "block";
+    if (biosSection && visionSection) {
+        if (sectionId === "bios") {
+            biosSection.style.display = "block";
+            visionSection.style.display = "none";
+        } else if (sectionId === "vision") {
+            biosSection.style.display = "none";
+            visionSection.style.display = "block";
+        }
     }
 }
