@@ -10,10 +10,7 @@
 
 <header>
     <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
     <img src="img/teamLogo.png" alt="Team Logo" class="team-logo">
-
-    <!-- Navigation menu to switch between sections -->
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
         <button onclick="showSection('vision')">Team Vision</button>
@@ -22,41 +19,39 @@
 
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
     <div class="card">
         <h2>Demetrius Brown</h2>
+        <img class="icon" src="img/code-ninja.png" alt="Code Ninja">
         <p>Frontend Developer</p>
+        <a href="https://www.linkedin.com/in/demetrius-brown-693706267/" class="linked">LinkedIn</a>
         <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">Motivated Computer Science student at UNC Charlotte with strong coding skills in Python, Java, and SQL. Seeking an internship or entry-level role to apply my technical expertise in software development, problem-solving, and database management. Strong background in team leadership and workflow optimization from warehouse operations experience</p>
+        <p id="bio1" class="bio">Motivated Computer Science student at UNC Charlotte with strong coding skills in Python, Java, and SQL. Seeking an internship or entry-level role to apply my technical expertise in software development, problem-solving, and database management. Strong background in team leadership and workflow optimization from warehouse operations experience.</p>
     </div>
     <div class="card">
-        <img src ="https://www.bing.com/images/search?view=detailV2&ccid=YIu7Sah7&id=72D766E9250B14C05A6DC858D886F36A3FDEEBD3&thid=OIP.YIu7Sah7TKYmz6AY_N3exgHaHa&mediaurl=https%3a%2f%2fas2.ftcdn.net%2fv2%2fjpg%2f05%2f62%2f50%2f67%2f1000_F_562506773_fHfLF6aioKButDkhOeXJcnNdwxl67WC1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.608bbb49a87b4ca626cfa018fcdddec6%3frik%3d0%252bveP2rzhthYyA%26pid%3dImgRaw%26r%3d0&exph=1000&expw=1000&q=coding+avatar&simid=607989558549610605&FORM=IRPRST&ck=8034003011C22936B56407ECE5D5BDA2&selectedIndex=25&itb=0">
         <h2>Marissa Lineberger</h2>
+        <img class="icon" src="img/coder-girl.jpg" alt="Coder Girl">
         <p>Product Owner</p>
-        <a href = "https://www.linkedin.com/in/marissa-lineberger-568075307/" > Connect with me on LinkedIn!</a>
+        <a href="https://www.linkedin.com/in/marissa-lineberger-568075307/" class="linked">LinkedIn</a>
         <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio"> A student at UNCC studying Computer Science, with a concentration in AI and Robtoics. Coding skills are strong with Python, C, and Java. Loves to work on new things and tackle challenges!
-        </p>
+        <p id="bio3" class="bio">A student at UNCC studying Computer Science, with a concentration in AI and Robotics. Coding skills are strong with Python, C, and Java. Loves to work on new things and tackle challenges!</p>
     </div>
     <div class="card">
-        <img src = "https://t4.ftcdn.net/jpg/07/12/90/99/360_F_712909943_dTMUr2HPiqyzSULwG9eznhVbf56CxysI.jpg">
         <h2>Talha Khan</h2>
+        <img class="icon" src="img/code-solider.jpg" alt="Coder Soldier">
         <p>Backend Developer</p>
-        <a href = "https://www.linkedin.com/in/talha-khan-01270a180/" >Here is my linkedin</a>
+        <a href="https://www.linkedin.com/in/talha-khan-01270a180/" class="linked">LinkedIn</a>
         <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Striving student at UNC Charlotte with skills including python, java, linux, etc. Graduating with a degree in Data Science and using my skills to apply for internships or entry level job for Data Science.
+        <p id="bio2" class="bio">Striving student at UNC Charlotte with skills including Python, Java, Linux, etc. Graduating with a degree in Data Science and using my skills to apply for internships or entry-level jobs in Data Science.</p>
+    </div>
 </div>
 
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
     <h2>Our Mission Statement</h2>
-    <p>At Scrum Masters, we are committed to building innovative, scalable, and high-performance solutions that drive excellence in software development. Our mission is to bridge creativity with technology, delivering seamless user experiences through intuitive UI/UX design and robust backend architecture. 
-
-        We believe in collaboration, continuous learning, and a user-first mindset, ensuring that every project we undertake is not only functional but also impactful. By leveraging cutting-edge technologies and industry best practices, we strive to create efficient, secure, and future-proof digital solutions. 
-        
-        Our goal is to empower businesses, enhance user engagement, and push the boundaries of innovation, all while maintaining a culture of excellence, integrity, and passion for problem-solving.
-        
-        Together, we code the future.</p>
+    <p>At Scrum Masters, we are committed to building innovative, scalable, and high-performance solutions that drive excellence in software development. Our mission is to bridge creativity with technology, delivering seamless user experiences through intuitive UI/UX design and robust backend architecture.</p>
+    <p>We believe in collaboration, continuous learning, and a user-first mindset, ensuring that every project we undertake is not only functional but also impactful. By leveraging cutting-edge technologies and industry best practices, we strive to create efficient, secure, and future-proof digital solutions.</p>
+    <p>Our goal is to empower businesses, enhance user engagement, and push the boundaries of innovation, all while maintaining a culture of excellence, integrity, and passion for problem-solving.</p>
+    <p>Together, we code the future.</p>
 </div>
 
 <script src="script.js"></script> <!-- Link to external JavaScript file -->
