@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>Meet Our Team</h1>
+    <img src="img/teamLogo.png" alt="Team Logo" class="team-logo">
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <div class="card">
+        <h2>Demetrius Brown</h2>
+        <img class="icon" src="img/code-ninja.png" alt="Code Ninja">
+        <p>Frontend Developer</p>
+        <a href="https://www.linkedin.com/in/demetrius-brown-693706267/" class="linked">LinkedIn</a>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">Motivated Computer Science student at UNC Charlotte with strong coding skills in Python, Java, and SQL. Seeking an internship or entry-level role to apply my technical expertise in software development, problem-solving, and database management. Strong background in team leadership and workflow optimization from warehouse operations experience.</p>
+    </div>
+    <div class="card">
+        <h2>Marissa Lineberger</h2>
+        <img class="icon" src="img/coder-girl.jpg" alt="Coder Girl">
+        <p>Product Owner</p>
+        <a href="https://www.linkedin.com/in/marissa-lineberger-568075307/" class="linked">LinkedIn</a>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">A student at UNCC studying Computer Science, with a concentration in AI and Robotics. Coding skills are strong with Python, C, and Java. Loves to work on new things and tackle challenges!</p>
+    </div>
+    <div class="card">
+        <h2>Talha Khan</h2>
+        <img class="icon" src="img/code-solider.jpg" alt="Coder Soldier">
+        <p>Backend Developer</p>
+        <a href="https://www.linkedin.com/in/talha-khan-01270a180/" class="linked">LinkedIn</a>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio">Striving student at UNC Charlotte with skills including Python, Java, Linux, etc. Graduating with a degree in Data Science and using my skills to apply for internships or entry-level jobs in Data Science.</p>
+    </div>
+</div>
+
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="container" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>At Scrum Masters, we are committed to building innovative, scalable, and high-performance solutions that drive excellence in software development. Our mission is to bridge creativity with technology, delivering seamless user experiences through intuitive UI/UX design and robust backend architecture.</p>
+    <p>We believe in collaboration, continuous learning, and a user-first mindset, ensuring that every project we undertake is not only functional but also impactful. By leveraging cutting-edge technologies and industry best practices, we strive to create efficient, secure, and future-proof digital solutions.</p>
+    <p>Our goal is to empower businesses, enhance user engagement, and push the boundaries of innovation, all while maintaining a culture of excellence, integrity, and passion for problem-solving.</p>
+    <p>Together, we code the future.</p>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>

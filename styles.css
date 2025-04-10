@@ -1,0 +1,123 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(169, 169, 169, 0.251);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section styling */
+header {
+    background: #333;
+    background-image: url("https://wallpapercave.com/wp/7gRF7Oj.jpg");
+    background-size: cover;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling for team logo image */
+.team-logo {
+    width: 150px; /* Adjust the size as needed */
+    margin-top: 10px;
+}
+
+/* Menu button styling */
+header nav {
+    margin-top: 10px;
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+header nav button {
+    background: #09ff00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background 0.3s ease;
+}
+
+header nav button:hover {
+    background: #21b300;
+}
+
+/* Flex container for team bios and vision sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Card styling for individual team bios */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin: 0 0 10px;
+    color: #00b306;
+}
+
+/* Initially hide bio details */
+.bio {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Button styling */
+button {
+    background: #00ff11;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #00b306;
+}
+
+/* LinkedIn link styling */
+a {
+    display: block;
+    text-decoration: none;
+}
+
+a.Linkedin {
+    color: #32CD32; /* Slime Green */
+}
+
+a.Linkedin:visited {
+    color: #228B22; /* Darker Green */
+}
+
+/* Icon images inside cards */
+img.icon {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
